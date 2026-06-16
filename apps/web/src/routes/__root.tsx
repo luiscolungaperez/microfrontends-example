@@ -1,6 +1,22 @@
-import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router"
+import { HeadContent, Outlet, Scripts, createRootRoute } from "@tanstack/react-router"
+import "@workspace/ui/elements/app-header"
 
 import appCss from "@workspace/ui/globals.css?url"
+
+function AppShell() {
+  return (
+    <>
+      <app-header>
+        <header>
+          <span className="brand">Example Apps</span>
+          <a href="/" data-path="/">Web</a>
+          <a href="/second" data-path="/second">Second</a>
+        </header>
+      </app-header>
+      <Outlet />
+    </>
+  )
+}
 
 export const Route = createRootRoute({
   head: () => ({
@@ -30,6 +46,7 @@ export const Route = createRootRoute({
     </main>
   ),
   shellComponent: RootDocument,
+  component: AppShell,
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {

@@ -21,6 +21,7 @@
     "@tailwindcss/vite": "catalog:",
     "@types/node": "catalog:",
     "@workspace/config-lint": "workspace:*",
+    "@workspace/ui": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "svelte": "catalog:",
