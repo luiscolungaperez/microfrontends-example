@@ -1,0 +1,39 @@
+{
+  "name": "@workspace/config-lint",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./biome.json",
+    "./biome": "./biome.json",
+    "./eslint/svelte": "./eslint/svelte.ts",
+    "./prettier/svelte": "./prettier/svelte.ts"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": ">=1.9.0",
+    "eslint": ">=9.0.0",
+    "prettier": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@biomejs/biome": {
+      "optional": true
+    },
+    "eslint": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "eslint": "^9",
+    "eslint-plugin-svelte": "^2",
+    "globals": "^16",
+    "prettier": "^3",
+    "prettier-plugin-svelte": "^3",
+    "prettier-plugin-tailwindcss": "^0.8",
+    "svelte": "^5",
+    "typescript-eslint": "^8"
+  }
+}
