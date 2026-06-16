@@ -3,16 +3,16 @@
   "version": "1",
   "applications": {
     "web": {
-      "packageName": "web",
+      "packageName": "microfrontends-example-web",
       "development": {
-        "fallback": "https://web.vercel.app",
+        "fallback": "https://microfrontends-example-web.vercel.app",
         "local": 3000
       }
     },
     "second": {
-      "packageName": "second",
+      "packageName": "microfrontends-example-second",
       "development": {
-        "fallback": "https://second.vercel.app",
+        "fallback": "https://microfrontends-example-second.vercel.app",
         "local": 3001
       },
       "routing": [
