@@ -33,6 +33,7 @@ catalog:
   "prettier-plugin-tailwindcss": "^0.8"
   # microfrontends
   "@vercel/microfrontends": "latest"
+  "nitro": "latest"
   # linting
   "eslint": "^10"
   "prettier": "^3"
