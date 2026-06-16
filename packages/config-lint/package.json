@@ -11,7 +11,7 @@
   },
   "peerDependencies": {
     "@biomejs/biome": ">=1.9.0",
-    "eslint": ">=9.0.0",
+    "eslint": ">=10.0.0",
     "prettier": ">=3.0.0"
   },
   "peerDependenciesMeta": {
@@ -27,13 +27,15 @@
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
-    "eslint": "^9",
-    "eslint-plugin-svelte": "^2",
-    "globals": "^16",
-    "prettier": "^3",
-    "prettier-plugin-svelte": "^3",
-    "prettier-plugin-tailwindcss": "^0.8",
-    "svelte": "^5",
-    "typescript-eslint": "^8"
+    "@eslint/js": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-svelte": "catalog:",
+    "globals": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-svelte": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "svelte": "catalog:",
+    "typescript-eslint": "catalog:"
   }
 }

@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite dev --port 3000",
+    "dev": "vite dev --port $(turbo get-mfe-port)",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "biome lint .",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "catalog:",
+    "@vercel/microfrontends": "catalog:",
     "@tanstack/react-devtools": "latest",
     "@tanstack/react-router": "latest",
     "@tanstack/react-router-devtools": "latest",
@@ -34,6 +35,6 @@
     "@vitejs/plugin-react": "^6",
     "@workspace/config-lint": "workspace:*",
     "typescript": "catalog:",
-    "vite": "^8"
+    "vite": "catalog:"
   }
 }

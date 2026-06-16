@@ -1,0 +1,23 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "version": "1",
+  "applications": {
+    "web": {
+      "packageName": "web",
+      "development": {
+        "fallback": "https://web.vercel.app",
+        "local": 3000
+      }
+    },
+    "second": {
+      "packageName": "second",
+      "development": {
+        "fallback": "https://second.vercel.app",
+        "local": 3001
+      },
+      "routing": [
+        { "paths": ["/second/:path*"] }
+      ]
+    }
+  }
+}

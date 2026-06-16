@@ -8,6 +8,20 @@ catalog:
   "@turbo/gen": "^2.9.15"
   "turbo": "^2.9.15"
   "typescript": "^6"
+  "vite": "^8"
+  # svelte
+  "svelte": "^5"
+  "svelte-check": "^4"
+  "@sveltejs/adapter-auto": "^7"
+  "@sveltejs/kit": "^2"
+  "@sveltejs/vite-plugin-svelte": "^7"
+  # svelte linting
+  "@eslint/js": "^10"
+  "eslint-config-prettier": "^10"
+  "eslint-plugin-svelte": "^3"
+  "globals": "^17"
+  "prettier-plugin-svelte": "^4"
+  "typescript-eslint": "^8"
   # react
   "react": "^19.2.6"
   "react-dom": "^19.2.6"
@@ -16,6 +30,15 @@ catalog:
   # tailwind
   "@tailwindcss/vite": "^4"
   "tailwindcss": "^4"
+  "prettier-plugin-tailwindcss": "^0.8"
+  # microfrontends
+  "@vercel/microfrontends": "latest"
+  # linting
+  "eslint": "^10"
+  "prettier": "^3"
   # misc shared
-  "@types/node": "^22"
+  "@types/node": "^24"
   "lucide-react": "^1.18.0"
+
+onlyBuiltDependencies:
+  - esbuild
