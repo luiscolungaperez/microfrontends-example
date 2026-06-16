@@ -2,15 +2,15 @@
   "$schema": "https://openapi.vercel.sh/microfrontends.json",
   "version": "1",
   "applications": {
-    "web": {
-      "packageName": "microfrontends-example-web",
+    "microfrontends-example-web": {
+      "packageName": "web",
       "development": {
         "fallback": "https://microfrontends-example-web.vercel.app",
         "local": 3000
       }
     },
-    "second": {
-      "packageName": "microfrontends-example-second",
+    "microfrontends-example-second": {
+      "packageName": "second",
       "development": {
         "fallback": "https://microfrontends-example-second.vercel.app",
         "local": 3001
